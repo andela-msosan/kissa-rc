@@ -77,7 +77,8 @@
   },
   "script": {
     "start": "meteor",
-    "test": "meteor test --full-app --settings settings.coverage.json --driver-package practicalmeteor:mocha"
+    "test": "meteor test --full-app --settings settings.coverage.json --driver-package practicalmeteor:mocha",
+    "cover":"cat .coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js || true"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.1",
@@ -89,6 +90,7 @@
     "eslint-plugin-react": "^6.2.2",
     "js-yaml": "^3.6.1",
     "react-addons-test-utils": "^15.3.1",
+    "spacejam": "https://github.com/serut/spacejam/tarball/windows-suppport-rc4",
     "wdio-mocha-framework": "^0.4.2",
     "webdriverio": "^4.2.3"
   },

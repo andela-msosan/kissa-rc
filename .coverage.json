@@ -1,3 +1,4 @@
 {
-"output": "./.coverage"
+"output": "./.coverage",
+  "remapFormat": ["html", "cobertura", "clover", "json", "json-summary", "lcovonly", "teamcity", "text", "text-summary"]
 }
